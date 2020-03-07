@@ -1,0 +1,46 @@
+/* header styles */
+
+
+
+
+/* navigation menu styles */
+
+
+
+
+/* footer styles */
+
+
+
+/* other general theme styles */
+
+
+
+
+/********************************************
+put all other styles UNDER here; make sure
+to comment in what pages they are for
+*********************************************/
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  background-color: #F1F0CC
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  color: #D5BF86;
+}
+
+
+h1 {
+  color: #A71D31;
+  font-size: 30px
+}
+
+table {
+	width: 100%;
+}
+
