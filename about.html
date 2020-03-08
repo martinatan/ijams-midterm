@@ -24,6 +24,15 @@
 		padding: 10px;
 	}
 
+	/* On screens that are 860px wide or less, make the columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 860px)
+	{
+  		.column
+  		{
+    		width: 100%;
+  		}
+	}
+
 </style>
 
 
@@ -48,12 +57,14 @@
 		<!-- 	to do: change basic links into images with designs depicting "our team," "our mission" -->
 		<div class="row">
 	  		<div class="column">
-	    		<h2>Our Mission</h2>
-	    		<a href="mission.html">Click here!</a>
+	    		<a href="mission.html">
+	    			<img src="photos/about/mission.jpg" alt="Mission photo" style ="width:400px">
+	    		</a>
 	  		</div>
 	  		<div class="column">
-	    		<h2>Our Team</h2>
-	    		<a href="team.html">Click here!</a>
+	    		<a href="team.html">
+	    			<img src="photos/about/team.jpg" alt="Team photo" style="width:400px">
+	    		</a>
 	  		</div>
 		</div>
 
