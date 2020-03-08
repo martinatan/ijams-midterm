@@ -2,7 +2,7 @@ document.write("<header>\
 	<div id=\"header-logo\">\
 		<a href=\"index.html\">The Reader's Nook</a>\
 	</div>\
-	<div class=\"topnav\">\
+	<div class=\"topnav\" id=\"myTopnav\">\
 			<a href=\"index.html\">Home</a>\
             <div class=\"dropdown\">\
             	<a href=\"about.html\" class=\"dropbtn\">About</a>\
