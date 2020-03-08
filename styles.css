@@ -8,8 +8,9 @@ header {
 
 #header-logo {
 	float: left;
-	font-size:30px;
+	font-size:28px;
 	padding: 5px;
+	padding-left:10px;
 }
 
 #header-logo a {
@@ -57,9 +58,11 @@ header {
 	display: none;
 	position: absolute;
 	background-color: #d5bf86;
-	min-width: 100px;
+	min-width: 140px;
+	max-width: 140px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
+	top: 50px; /*temporary fix for overlap issue*/
 }
 
 .dropdown-content a {
