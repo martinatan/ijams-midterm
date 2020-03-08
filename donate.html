@@ -8,24 +8,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Lustria|Raleway&display=swap" rel="stylesheet">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("button").click(function(){
+			$("p").hide();
+		  });
+		});
+		</script>
 <style>
 
- .Donate-Button{
-		background-color:#3F0D12; 
-		font-family: Lustria; 
-		font-size:24px; 
-		border-radius: 12px; 
-		padding: 10px;
-		width: 100px;
-		margin-right: auto;
-		top: 20px;
-
-	}
-	a{
+ button{
+	font-family: Lustria; 
+	padding: 10px;
+	background-color:#3F0D12; 
 	color:  #f1f0cc;
-	} 
+	font-size:24px; 
+	border-radius: 12px;
+	}
+
+	
+
+
 
 </style>
 
@@ -52,7 +57,7 @@
 	<div class="Donate-Button">
 
 	<p>
-		<a href="https://www.roomtoread.org/support-education/">Donate Now</a>
+		<a href="https://www.roomtoread.org/support-education/"><button>Donate Here</button></a>
 	</p>
 
 	</div>
@@ -62,3 +67,15 @@
 </body>
 
 </html>
+{
+	background-color:#3F0D12; 
+	font-family: Lustria; 
+	font-size:24px; 
+	border-radius: 12px; 
+	padding: 10px;
+	width: 100px;
+	margin-right: auto;
+	top: 20px;
+	color: #f1f0cc;
+	
+}
