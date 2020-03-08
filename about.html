@@ -12,16 +12,28 @@
 
 <style>
 
-	/*styling for two columns*/
-	.row 
-	{
-  		display: flex;
-	}
+	* {
+  box-sizing: border-box;
+}
 
 	.column
 	{
-		flex: 50%;
+		float:left;
+		width: 50%;
 		padding: 10px;
+	}
+
+	.row:after
+	{
+	  	content: "";
+	 	display: table;
+	  	clear: both;
+	}
+
+	.image
+	{
+		display: flex;
+  		justify-content: center;
 	}
 
 	/* On screens that are 1050px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -30,9 +42,12 @@
   		.column
   		{
     		width: 100%;
-    		
+    		display:block;
   		}
 	}
+
+
+
 
 </style>
 
@@ -49,35 +64,30 @@
 		<h1>About Us</h1>
 
 		<p>
-			The Reader’s Nook donates your used books to underprivileged communities around the Boston area! Click the following links below for more information! <br/>
+			The Reader’s Nook donates your used books to underprivileged communities around the Boston area! Click on the following images below to learn more about our mission statement and team! <br/>
 
-			<br/><br/>
-			<em>TO DO: change basic HTML to show images that serve as links to "Our Team" and "Our Mission"</em>
+			<br/>
 		</p>
 
 		<!-- 	to do: change basic links into images with designs depicting "our team," "our mission" -->
 		<div class="row">
 	  		<div class="column">
 	    		<a href="mission.html">
-	    			<img src="photos/about/mission.jpg" alt="Mission photo" style ="width:400px">
+	    			<div class="image">
+	    				<img src="photos/about/mission.jpg" alt="Mission photo" style ="width:400px">
+	    			</div>
 	    		</a>
 	  		</div>
 	  		<div class="column">
 	    		<a href="team.html">
-	    			<img src="photos/about/team.jpg" alt="Team photo" style="width:400px">
+	    			<div class="image">
+	    				<img src="photos/about/team.jpg" alt="Team photo" style="width:400px">
+	    			</div>
 	    		</a>
 	  		</div>
 		</div>
 
 	</div>
-
-
-
-	<!-- <a href="https://www.google.com">
-  		<img src="photos/about/andrew_picture.jpg" alt="Andrew Picture" style="width:400px;height:400px">
-	</a> -->
-
-
 
     <script type="text/javascript" src="includes/footer.js"></script>
 
