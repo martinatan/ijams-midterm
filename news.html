@@ -37,6 +37,23 @@
              margin-left:auto;
              margin-right:auto;
              margin:auto;}
+        form input, textarea {
+         		font-family: Raleway, Sans-Serif;
+         		color: #3f0d12;
+         		background-color: #f1f0cc;
+        }
+        input[type=text], select, textarea {
+         	  font-family: Raleway, Sans-Serif;
+         	  width: 100%;
+         	  padding: 16px;
+         	  font-size: 16px;
+         	  border: 1px solid #ccc;
+         	  border-radius: 4px;
+         	  box-sizing: border-box;
+         	  margin-top: 6px;
+         	  margin-bottom: 16px;
+         	  resize: vertical;
+         }
     </style>
     <script type="text/javascript">
         function verify() {
@@ -44,12 +61,12 @@
             event.preventDefault();
             if (document.getElementById("email").value == "") {
                 alert("Please enter an email");
-                return true;
+                return false;
             } else {
                 emailTxt = document.getElementById("email").value
                 if (valid(emailTxt) == false) {
                     alert("Please enter a valid email");
-                    return true;
+                    return false;
                 } else {
                     alert("Thank you for subscribing!");
                     document.getElementById("email").value = "";
@@ -155,7 +172,7 @@
             <p align="center" style="padding:0px">
                 If you would like to be subscribed to our newsletter, enter
                 your email in the text box below! <br />
-                <input type="text" id="email" name="email"/></input>
+                <input type="text" id="email" name="email" placeholder="Enter your email..."></input>
                 <input type="button" id="submit" value="Submit" onclick="return verify();" />
             </p>
         </form>
