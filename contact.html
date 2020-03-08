@@ -8,78 +8,106 @@
 	<link href="https://fonts.googleapis.com/css?family=Lustria|Raleway&display=swap" rel="stylesheet">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    	* {
+    		box-sizing: border-box;
+    	}
+
+    	form label{
+    		font-family: Lustria, Serif;
+    		color: #3f0d12;
+    		font-size: 18px;
+    		font-weight: bold;
+    	}
+
+    	form input, textarea{
+    		font-family: Raleway, Sans-Serif;
+    		color: #3f0d12;
+    		background-color: #f1f0cc;
+    	}
 
 
-<style>
-	* {
-		box-sizing: border-box;
-	}
+    	input[type=text], select, textarea {
+    	  font-family: Raleway, Sans-Serif;
+    	  width: 100%;
+    	  padding: 16px;
+    	  font-size: 16px;
+    	  border: 1px solid #ccc;
+    	  border-radius: 4px;
+    	  box-sizing: border-box;
+    	  margin-top: 6px;
+    	  margin-bottom: 16px;
+    	  resize: vertical;
+    	}
 
-	form label{
-		font-family: Lustria, Serif;
-		color: #3f0d12;
-		font-size: 18px;
-		font-weight: bold;
-	}
+    	input[type=submit] {
+    	  font-size: 18px;
+    	  background-color: #A71D31;
+    	  color: white;
+    	  padding: 12px 20px;
+    	  border: none;
+    	  border-radius: 4px;
+    	  cursor: pointer;
+    	}
 
-	form input, textarea{
-		font-family: Raleway, Sans-Serif;
-		color: #3f0d12;
-		background-color: #f1f0cc;
-	}
+    	input[type=submit]:hover {
+    	  background-color: #3f0d12;
+    	}
 
+    	.container {
+    	  border-radius: 5px;
+    	  background-color: #d5bf86;
+    	  padding: 20px;
+    	}
+    </style>
+    <script type="text/javascript">
+    function verify() {
+        event.preventDefault();
+        if (document.getElementById("fname").value == "") {
+            alert("Please enter a first name");
+            return true;
+        }
 
-	input[type=text], select, textarea {
-	  font-family: Raleway, Sans-Serif;
-	  width: 100%;
-	  padding: 16px;
-	  font-size: 16px;
-	  border: 1px solid #ccc;
-	  border-radius: 4px;
-	  box-sizing: border-box;
-	  margin-top: 6px;
-	  margin-bottom: 16px;
-	  resize: vertical;
-	}
+        if (document.getElementById("lname").value == "") {
+            alert("Please enter a last name");
+            return true;
+        }
 
-	input[type=submit] {
-	  font-size: 18px;
-	  background-color: #A71D31;
-	  color: white;
-	  padding: 12px 20px;
-	  border: none;
-	  border-radius: 4px;
-	  cursor: pointer;
-	}
+        if (document.getElementById("email").value == "") {
+            alert("Please enter an email");
+            return true;
+        }
 
-	input[type=submit]:hover {
-	  background-color: #3f0d12;
-	}
+        emailTxt = document.getElementById("email").value
 
-	.container {
-	  border-radius: 5px;
-	  background-color: #d5bf86;
-	  padding: 20px;
-	}
-</style>
+        if (!emailTxt.includes("@")) {
+            alert("Please enter a valid email");
+            return true;
+        }
+
+        if (!emailTxt.includes(".")) {
+            alert("Please enter a valid email");
+            return true;
+        }
+
+        alert("Thank you for registering! Someone shall contact you shortly");
+        document.getElementById("contactform").reset();
+    }
+    </script>
 </head>
-
 <body>
-
-    <script type="text/javascript" src="includes/header.js"></script>
-
 	<div class="main-container">
     	<h1 style="text-align:center;">CONTACT US</h1>
     	<p>Fill out the form below to send us an email.</p>
 		<div class="container">
-		  <form action="/action_page.php">
-		    <label for="fname">First Name</label>
+		  <form id="contactform">
+		    <label for="fname">First Name*</label>
 		    <input type="text" id="fname" name="fname" placeholder="Enter your first name...">
 
-		    <label for="lname">Last Name</label>
+		    <label for="lname">Last Name*</label>
 		    <input type="text" id="lname" name="lname" placeholder="Enter your last name...">
 
-		    <label for="email">Email</label>
+		    <label for="email">Email*</label>
 		    <input type="text" id="email" name="email" placeholder="Enter the email we can contact you at...">
 
    		    <label for="phone">Phone Number (optional)</label>
@@ -91,13 +119,10 @@
 		    <label for="message">Message</label>
 		    <textarea id="message" name="message" placeholder="Write something..." style="height:150px"></textarea>
 
-		    <input type="submit" value="Submit">
+		    <input type="submit" value="Submit" onclick="return verify();"/>
 		  </form>
 		</div>
 	</div>
-
-    <script type="text/javascript" src="includes/footer.js"></script>
-
 
 </body>
 
