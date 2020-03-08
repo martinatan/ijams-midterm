@@ -43,6 +43,27 @@
              margin:auto;}
     </style>
     <script type="text/javascript">
+        function verify() {
+            var form = document.getElementById("emailForm");
+            event.preventDefault();
+            if (document.getElementById("email").value == "") {
+                alert("Please enter an email");
+                return true;
+            } else {
+                emailTxt = document.getElementById("email").value
+                if (valid(emailTxt) == false) {
+                    alert("Please enter a valid email");
+                    return true;
+                } else {
+                    alert("Thank you for subscribing!");
+                    document.getElementById("email").value = "";
+                    return true;
+                }
+                document.getElementById("email").value = "";
+            }
+            return true;
+        }
+
         function valid(s) {
             if (s.includes("@")) return true;
             return false;
@@ -138,30 +159,10 @@
             <p align="center" style="padding:0px">
                 If you would like to be subscribed to our newsletter, enter
                 your email in the text box below! <br />
-                <input type="text" id="email" name="email"/>
-                <input type="submit">
+                <input type="text" id="email" name="email"/></input>
+                <input type="button" id="submit" value="Submit" onclick="return verify();" />
             </p>
-            <script type="text/javascript">
-                var form = document.getElementById("emailForm");
-                function stopSubmit(event) {
-                    event.preventDefault();
-                    if (document.getElementById("email").value == "") {
-                        alert("Please enter an email");
-                    } else {
-                        emailTxt = document.getElementById("email").value
-                        if (valid(emailTxt) == false) {
-                            alert("Please enter a valid email");
-                        } else {
-                            alert("Thank you for subscribing!");
-                        }
-                        document.getElementById("email").value = "";
-                    }
-                }
-                emailForm.addEventListener('click', stopSubmit);
-            </script>
         </form>
-        <br />
-
     </div>
 
     <script type="text/javascript" src="includes/footer.js"></script>
