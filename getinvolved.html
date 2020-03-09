@@ -9,13 +9,31 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        * {
-            box-sizing:border-box;
+        img {
+            max-width:400px;
+            width:100%;
+            justify-content:center;
         }
 
-        .images {
-            width:80%
+        @media screen and (max-width: 1215px)
+        {
+            td {
+                justify-content:center;
+                margin-left:auto;
+                margin-right:auto;
+                display:block;
+            }
+
+            img {
+                max-width:600px;
+                width:100%;
+                padding:5px;
+                margin-left:auto;
+                margin-right:auto;
+                display:block;
+            }
         }
+
     </style>
 </head>
 <body>
@@ -27,9 +45,13 @@
        </p>
        <br />
        <br />
-       <a href="network.html"><img src="photos/getinvolved/network.png" alt="Network" style="width:375px"></a>
-       <a href="volunteer.html"><img src="photos/getinvolved/volunteer.png" alt="Network" style="width:375px"></a>
-       <a href="donate.html"><img src="photos/getinvolved/donate.png" alt="Network" style="width:375px"></a>
+       <table>
+           <tr>
+               <td><a href="network.html"><img src="photos/getinvolved/network.png" alt="Network"></a></td>
+               <td><a href="volunteer.html"><img src="photos/getinvolved/volunteer.png" alt="Volunteer"></a></td>
+               <td><a href="donate.html"><img src="photos/getinvolved/donate.png" alt="Donate"></a></td>
+           </tr>
+       <table>
    </div>
    <script type="text/javascript" src="includes/footer.js"></script>
 </body>
