@@ -192,7 +192,7 @@ h1, h2 {
 	color:#A71D31;
     font-size:32px;
     position:relative;
-    font-family:Raleway, Sans-Serif;
+    font-family:Lustria, Serif;
 }
 
 h2 {
@@ -203,12 +203,12 @@ h2 {
 p, ul, li{
 	color:#3F0D12;
    	font-size:17px;
-   	font-family:Lustria, Serif;
+   	font-family:Raleway, Sans-Serif;
 }
 
 a {
 	color:#3F0D12;
-  	font-family:Lustria, Serif;
+  	font-family:Raleway, Sans-Serif;
 }
 
 /* for news.html */
