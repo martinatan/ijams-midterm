@@ -82,14 +82,10 @@
             return false;
         }
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-        
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-
-    <script type="text/javascript" src="includes/header.js"></script>
-
+     <script type="text/javascript" src="includes/header.js"></script>
     <div class="main-container">
         <h1>In the News</h1>
         <h2>The Reader’s Nook is inspiring readers across
@@ -144,7 +140,7 @@
         <img style="border:3px solid #000" src="photos/news/kidreading.jpeg">
         <br />
         <br />
-        <h1 align="center">TESTIMONIALS</h1>
+        <h1>Testimonials</h1>
         <p class="testimonial" align="center">
             <span><u>Maya Harris</u></span>
             <br />
@@ -169,7 +165,7 @@
             of our lives.”</p>
         <br />
         <br />
-        <h1 align="center" style="padding:0px">NEWSLETTER</h1>
+        <h1>Newsletter</h1>
         <form align="center" id="emailForm">
             <p align="center" style="padding:0px">
                 If you would like to be subscribed to our newsletter, enter
@@ -179,7 +175,25 @@
             </p>
         </form>
     </div>
+    <script>
+        $('a p').hover(function() {
+            $(this).css("color", "tomato");
+        }, function() {
+            $(this).css("color", "#3f120d");
+        });
 
+        $('a').hover(function() {
+            $(this).css("color", "tomato");
+        }, function() {
+            $(this).css("color", "#3f120d");
+        });
+
+        $('.quote').hover(function() {
+            $(this).css("font-style", "normal");
+        }, function() {
+            $(this).css("font-style", "italic");
+        });
+    </script>
     <script type="text/javascript" src="includes/footer.js"></script>
 </body>
 </html>
