@@ -6,15 +6,17 @@
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lustria|Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 <style>
 
-	* {
-  box-sizing: border-box;
-}
+	* 
+	{
+  		box-sizing: border-box;
+	}
 
 	.column
 	{
@@ -36,7 +38,6 @@
   		justify-content: center;
 	}
 
-	/* On screens that are 1050px wide or less, make the columns stack on top of each other instead of next to each other */
 	@media screen and (max-width: 1050px)
 	{
   		.column
@@ -46,8 +47,18 @@
   		}
 	}
 
+	img
+	{
+		height:auto;
+		width:100%;
+	}
 
-
+	div.image img
+	{
+  		max-width: 100%;
+  		height: auto;
+  		display: block;
+	}
 
 </style>
 
@@ -69,19 +80,18 @@
 			<br/>
 		</p>
 
-		<!-- 	to do: change basic links into images with designs depicting "our team," "our mission" -->
 		<div class="row">
 	  		<div class="column">
 	    		<a href="mission.html">
 	    			<div class="image">
-	    				<img src="photos/about/mission.jpg" alt="Mission photo" style ="width:400px">
+	    				<img src="photos/about/mission.jpg" alt="Mission photo">
 	    			</div>
 	    		</a>
 	  		</div>
 	  		<div class="column">
 	    		<a href="team.html">
 	    			<div class="image">
-	    				<img src="photos/about/team.jpg" alt="Team photo" style="width:400px">
+	    				<img src="photos/about/team.jpg" alt="Team photo">
 	    			</div>
 	    		</a>
 	  		</div>

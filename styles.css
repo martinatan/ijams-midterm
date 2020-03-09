@@ -2,7 +2,7 @@
 
 header {
 	width: 100%;
-	padding-bottom:50px;
+	padding-bottom:47px;
 	background-color: #3f0d12;
 }
 
@@ -43,6 +43,11 @@ header {
 	font-style: italic;
 }
 
+/* hide hamburger menu icon at larger sizes */
+.menuicon {
+  display: none;
+  color: #f1f0cc;
+}
 
 /* dropdown nav menu styles */
 
@@ -58,13 +63,13 @@ header {
 
 .dropdown-content {
 	display: none;
-	position: absolute;
+	position: relative;
 	background-color: #d5bf86;
 	min-width: 140px;
 	max-width: 140px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
-	top: 50px; /*temporary fix for overlap issue*/
+	top: 47px; /*temporary fix for overlap issue*/
 }
 
 .dropdown-content a {
@@ -81,51 +86,46 @@ header {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    position:absolute;
 }
 
-
 /* responsive dropdown menu */
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 850px) {
+	header {
+		padding: 0px;
+	}
 	#header-logo {
-		width:100%;
-	}
-	#header-logo a{
-		font-size: 24px;
-		text-align:center;
-	}
-	.topnav {
-		position: relative;
-	}
-	.topnav a {
-		float:none;
 		display: block;
-		text-align: left;
-		background-color: #3f0d12;
-		color: #f1f0cc;
-	}
-	.topnav a:hover {
-		background-color: #a71d31;
-	}
-	.dropdown {
 		float: none;
-		z-index: 9999;
-	}
-	.dropdown .dropbtn {
-		display:block;
+		text-align: center;
 	}
 	.dropdown-content {
-		position: relative;
-		float:none;
-		color:#3f0d12;
-		display:block;
-		top: 0px; /*temporary fix for overlap issue*/
+		top: 93px;
 	}
-	.dropdown-content a {
-		background-color: #8d775f;
-  		border:1px solid #8d755f;
-  		margin-left: 10px;
+	.topnav {
+		float: none;
+		width: 80%;
+		margin:auto;
 	}
- }
+}
+/*
+@media screen and (max-width: 715px) {
+  	.topnav a, .dropdown .dropbtn {
+    	display: none;
+  	}
+ 	.menuicon a.icon {
+    	float: right;
+    	display: block;
+  	}
+
+	#header-logo {
+		display: inline;
+		float: left;
+		padding-left:10px;
+	}
+
+
+ }*/
 
 
 /* footer styles */
@@ -160,6 +160,7 @@ footer {
 
 #copyright {
 	float:right;
+	padding-right:15px;
 }
 
 /* other general theme styles */
@@ -167,11 +168,6 @@ footer {
 	width: 100%;
 	position: fixed;
 }
-
-/********************************************
-put all other styles under here; make sure
-to comment in what pages they are for
-*********************************************/
 
 body{
 	margin: 0px;

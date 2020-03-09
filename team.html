@@ -6,67 +6,62 @@
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lustria|Raleway&display=swap" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<style>
 
-<style>
+		h3
+		{
+			font-style:bold;
+	        font-family:Raleway;
+	        text-align: center;
+		}
 
-	h3
-	{
-		font-style:bold;
-        font-family:Raleway;
-        text-align: center;
-	}
+		p.title
+		{
+	       	font-size:24px;
+	       	padding:10px;
+	       	margin:0 auto;
+	       	font-style:bold;
+	   	}
 
-	p.title
-	{
-       	font-size:17px;
-       	padding:10px;
-       	margin:0 auto;
-       	font-style:bold;
-   }
+	   	p.info
+	   	{
+	       	font-size:16px;
+	       	padding:10px;
+	       	margin:0 auto; 	
+	   	}
 
-   p.info
-   {
-       	font-size:14px;
-       	padding:10px;
-       	margin:0 auto; 	
-   }
+		.image
+		{
+			display: flex;
+	  		justify-content: center;
+		}
 
-	.image
-	{
-		display: flex;
-  		justify-content: center;
-	}
+		/* three columns */
+		.column {
+		  	float: left;
+		  	width: 32%;
+		  	padding: 5px;
+		  	align-content: center;
+		  	border: 1px solid;
+		}
 
-	/* Create four equal columns that floats next to each other */
-	.column {
-	  	float: left;
-	  	width: 32%;
-	  	padding: 5px;
-	  	align-content: center;
-	}
+		.row:after 
+		{
+		  	content: "";
+		  	display: table;
+		  	clear: both;
+		}
 
-	/* Clear floats after the columns */
-	.row:after 
-	{
-	  	content: "";
-	  	display: table;
-	  	clear: both;
-	}
-
-	/* On screens that are 1200px wide or less, make the columns stack on top of each other instead of next to each other */
-	@media screen and (max-width: 1200px) {
-	  	.column 
-	  	{
-	   		width: 100%;
-	  	}
-	}
-
-</style>
-
-
+		@media screen and (max-width: 1125px) {
+		  	.column 
+		  	{
+		   		width: 100%;
+		  	}
+		}
+	</style>
 </head>
 
 <body>
@@ -78,7 +73,7 @@
 		<h1>Our Team</h1>
 
 		<p>
-			Meet Our Team! We’re a group of undergraduates from Tufts University. [TODO: add hometown/hobbies in everyone's bio]
+			Meet our team! We’re a group of undergraduates from Tufts University in Medford and Somerville, MA.
 		</p>
 
 		<div class="row">
@@ -86,79 +81,78 @@
 	  			<div class="column" style="background-color:#D5BF86;">
 	  				<h3>FOUNDER</h3>
 	  				<div class="image">
-	    				<img src="photos/about/martina_picture.jpg" alt="Mission photo" style ="width:300px">
+	    				<img src="photos/about/martina_picture.jpg" alt="Martina Profile Picture" style ="width:100%" style="height:auto">
 	    			</div>
 	  				<p class="title" align="center">
 	  					Martina Tan
 	  				</p>
-	  				<img src="photos/about/house_img.png" alt="house" style="width:25px">
 	  				<p class="info" align="center">
-	  					info
+	  					<img src="photos/about/house_img.png" alt="house" style="width:20px"> Mount Laurel, NJ<br/>
+	  					<img src="photos/about/school_img.png" alt="school" style="width:25px"> Tufts 2021<br/>
+	  					<img src="photos/about/hobby_img.png" alt="hobby" style="width:20px"> Bird Watching, Graphic Design, Stardew Valley
 	  				</p>
 	  			</div>
-				<div class="column" style="background-color:#8D775F;">
+				<div class="column" style="background-color:#E1D2AA;">
 					<h3>PRESIDENT</h3>
 					<div class="image">
-	    				<img src="photos/about/jj_picture.jpg" alt="Mission photo" style ="width:300px">
+	    				<img src="photos/about/jj_picture.jpg" alt="JJ Profile Picture" style ="width:100%" style="height:auto">
 	    			</div>
 					<p class="title" align="center">
 	  					JJ Stewart
 	  				</p>
-	  				<img src="photos/about/house_img.png" alt="house" style="width:25px">
 	  				<p class="info" align="center">
-	  					info
+	  					<img src="photos/about/house_img.png" alt="house" style="width:20px"> Summit, NJ<br/>
+	  					<img src="photos/about/school_img.png" alt="school" style="width:25px"> Tufts 2022<br/>
+	  					<img src="photos/about/hobby_img.png" alt="hobby" style="width:20px"> Sketch Comedy, Media Production, Baked Goods
 	  				</p>
 				</div>
 				<div class="column" style="background-color:#D5BF86;">
 					<h3>VICE PRESIDENT</h3>
 					<div class="image">
-	    				<img src="photos/about/andrew_picture.jpg" alt="Mission photo" style ="width:300px">
+	    				<img src="photos/about/andrew_picture.jpg" alt="Andrew Profile Picture" style ="max-width:100%" style="height:auto">
 	    			</div>
 					<p class="title" align="center">
 	  					Andrew Wang
 	  				</p>
-	  				<img src="photos/about/house_img.png" alt="house" style="width:25px">
 	  				<p class="info" align="center">
-	  					hi
+	  					<img src="photos/about/house_img.png" alt="house" style="width:20px"> Lexington, MA<br/>
+	  					<img src="photos/about/school_img.png" alt="school" style="width:25px"> Tufts 2020<br/>
+	  					<img src="photos/about/hobby_img.png" alt="hobby" style="width:20px"> Eurovision, Cooking, Baking, Learning Languages
 	  				</p>
 				</div>
-				<div class="column" style="background-color:#8D775F;">
+				<div class="column" style="background-color:#E1D2AA;">
 					<h3>TREASURER</h3>
 					<div class="image">
-	    				<img src="photos/about/isabella_picture.jpg" alt="Mission photo" style ="width:300px">
+	    				<img src="photos/about/isabella_picture.jpg" alt="Isabella Profile Picture" style ="width:100%" style="height:auto">
 	    			</div>
 					<p class="title" align="center">
-	  					Isabella Uhdahl
+	  					Isabella Urdahl
 	  				</p>
-	  				<img src="photos/about/house_img.png" alt="house" style="width:25px">
 	  				<p class="info" align="center">
-	  					info
+	  					<img src="photos/about/house_img.png" alt="house" style="width:20px"> Portola Valley, CA<br/>
+	  					<img src="photos/about/school_img.png" alt="school" style="width:25px"> Tufts 2022<br/>
+	  					<img src="photos/about/hobby_img.png" alt="hobby" style="width:20px"> TA-ing COMP11, Baking Healthy Baked Goods
 	  				</p>
 				</div>
 				<div class="column" style="background-color:#D5BF86;">
 					<h3>OUTREACH COORDINATOR</h3>
 					<div class="image">
-	    				<img src="photos/about/sohara_picture.jpg" alt="Mission photo" style ="width:300px">
+	    				<img src="photos/about/sohara_picture.jpg" alt="Sohara Profile Picture" style ="width:100%" style="height:auto">
 	    			</div>
 					<p class="title" align="center">
 	  					Sohara Zafar
 	  				</p>
-	  				<img src="photos/about/house_img.png" alt="house" style="width:25px">
 	  				<p class="info" align="center">
-	  					info
+	  					<img src="photos/about/house_img.png" alt="house" style="width:20px"> Houston, TX<br/>
+	  					<img src="photos/about/school_img.png" alt="school" style="width:25px"> Tufts 2020<br/>
+	  					<img src="photos/about/hobby_img.png" alt="hobby" style="width:20px"> Indoor Rock Climbing, The Great British Baking Show
 	  				</p>
 				</div>
 			</div>
 		</div>
 
-
+		<h3><a href="volunteer.html">Click here</a> if you would like to join our team!</h3>
 	</div>
-
-
-
-
-
-
 
     <script type="text/javascript" src="includes/footer.js"></script>
 
