@@ -160,6 +160,7 @@ footer {
 
 #copyright {
 	float:right;
+	padding-right:15px;
 }
 
 /* other general theme styles */
@@ -167,11 +168,6 @@ footer {
 	width: 100%;
 	position: fixed;
 }
-
-/********************************************
-put all other styles under here; make sure
-to comment in what pages they are for
-*********************************************/
 
 body{
 	margin: 0px;
