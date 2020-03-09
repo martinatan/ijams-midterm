@@ -33,11 +33,10 @@
 
 	.image
 	{
-		/*display: flex;*/
+		display: flex;
   		justify-content: center;
 	}
 
-	/* On screens that are 1050px wide or less, make the columns stack on top of each other instead of next to each other */
 	@media screen and (max-width: 1050px)
 	{
   		.column
@@ -53,7 +52,13 @@
 		max-width:100%;
 	}
 
-
+	div > img 
+	{
+  		width: auto;
+  		height : auto;
+  		max-height: 100%;
+  		max-width: 100%;
+	}
 
 </style>
 
