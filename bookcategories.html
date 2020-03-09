@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type = "text/css" href="styles.css" />
-<style type="text/css">
+
+<style>
 		* {
 		  box-sizing: border-box;
 		}
@@ -19,114 +20,86 @@
 			height: 200px;
 		}
 
-		.container:before,
-		.container:after {
-		    content: "";
-		    display: table;
-		}
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'top top top top top'
+   						 'top top top top top'
+                    
+}
 
-		.container:after {
-		    clear: both;
-		}
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'top top top top top'                 
+}
 
-		/* Create two equal columns that floats next to each other */
-		.column {
-		  float: left;
-/*		  margin-top: 100px;*/
-		  margin-bottom: 100px;
-		  width: 20%;
-		  padding: 10px;
-		  height: 300px; /* Should be removed. Only for demonstration */
-		  position: relative;
-		}
-
-		/* Clear floats after the columns */
-		.row:after {
-		  content: "";
-		  display: table;
-		  float: none;
-		  margin-bottom: 100px;
-		  margin-top: 100px;
-		}
-
-		.column:after {
-			clear: both;
-		}
-
-		
-	/*	@media (max-width: 600px)
-		{
-			
-		}*/
-
-/*		@ media (max-width: )
-*/
-		</style>
-	</head>
-
+.grid-cell .top {
+    grid-area: top;
+}
+.grid-cell .middle {
+    grid-area: middle;
+}
+.grid-cell .bottom {
+    grid-area: bottom;
+}
+</style>
+</head>
 <body>
     <script type="text/javascript" src="includes/header.js"></script>
 
 
 <h2> Collections by Genre </h2>
 
-<div class="container">
-<div class="row">
-  <div class="column">
-		<h2>Classics </h2>
+<div class="container1">
+    <div class="grid-cell top">
+    	<h2>Classics </h2>
 		<div><img box-sizing="border-box" display= "flex" src="photos/bookcategories/p&pj.jpg" alt="Photo of book"></div>
 		<p>Pride and Prejudice by Jane Austen</p>
 		<p>Little Women by Louisa May Alcott</p>
 		<p>Hamlet by Shakespeare</p>	  
 		<p>One Hundred Years of Solitude by Gabriel García Márquez</p>	  
-		<p>The Great Gatsby by F. Scott Fitzgerald </p>	    
-  </div>
-
-  <div class="column">
-	    <h2>Fantasy</h2>
+		<p>The Great Gatsby by F. Scott Fitzgerald </p>	   
+		</div>
+    <div class="grid-cell top">
+    	<h2>Mystery</h2>
+	    <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/curiousincident.jpeg" alt="Photo of book"> </div>	      	  
+		<p>And Then There Were None by Agapa Christie</p>
+		<p>The Girl on The Train by Paula Hawkins</p>
+		<p>Dragon's Teeth by Upton Sinclair</p>
+		<p>Queenpin by Megan Abbott</p>
+		<p>The Curious Incident of The Dog and The Nightime by Mark Haddon</p>
+    </div>
+     <div class="grid-cell top">
+     	 <h2>Fantasy</h2>
 		<img box-sizing="border-box" display= "flex" src="photos/bookcategories/harrypotter.jpg" alt="Photo of book"> 	 
 		<p>Lord of The Rings by J.R.R. Tolkein</p>
 		<p>Eragon Series by Christopher Paolini</p>		      
 		<p>The Magic Tree House Series</p>       
 		<p>Harry Potter Series by J.K. Rowling</p>
 		<p>Percy Jackson and The Olympians Series by Rick Riordan</p>
-  </div>
-
-   <div class="column">
-	    <h2 >Poetry</h2>	 
+     </div>
+     <div class="grid-cell top">
+     	<h2 >Poetry</h2>	 
 	    <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/milkandhoney.jpeg" alt="Photo of book"> </div>	
 		<p>Night Sky with Exit Wounds by Ocean Vuong</p>
 		<p>Milk and Honey by Rupi Kaur</p>
 		<p>The Complete Collected Poems of Maya Angelou by Maya Angelou</p>
 		<p>Life on Mars by Tracy K. Smith</p>
 		<p>The Loop of Jade by Sarah Howe </p>
-  </div>
-
-	<div class="column">
+     </div>
+     <div class="grid-cell top">
 	    <h2>Dystopian</h2>
 	    <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/hungergames.jpeg" alt="Photo of book"> </div>	  
 	    <p>The Hunger Games by Suzanne Collins</p>
 	    <p>Parable of The Sower by Octavia E. Butler</p>	 
 	    <p>The Windup Girl by Paolo Bacigalupi</p>
 	    <p>Brown Girl in The Ring by Nalo Hopkinson</p>
-	    <p>Ship Breaker by Paolo Bacigalupi</p>    
-	</div>     
-
-	<div class="column">
-	    <h2>Mystery</h2>
-	    <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/curiousincident.jpeg" alt="Photo of book"> </div>	      	  
-		<div>And Then There Were None by Agadiva Christie</div>
-		<div>The Girl on The Train by Paula Hawkins</div>
-		<div>Dragon's Teeth by Upton Sinclair</div>
-		<div>Queenpin by Megan Abbott</div>
-		<div>The Curious Incident of The Dog and The Nightime by Mark Haddon</div>
-	</div>
-</div>
-</div>
-		
-<div class="container">
-	<div class="row">
-		<div class="column">
+	    <p>Ship Breaker by Paolo Bacigalupi</p>       	
+     </div>
+     <div class="grid-cell top">
 	       	<h2>Memoir </h2>
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/michelle.jpeg" alt="Photo of book"> </div>	
     	    <p>Being Mortal by Atul Gawande</p>
@@ -134,55 +107,48 @@
 	        <p>The Woman Warrior by Maxine Hong Kingston</p>	
 	        <p>Becoming by Michelle Obama</p>       	
 	        <p>Dreams From My Father by Barack Obama</p>
-	    </div>
-	    
-	    <div class="column">
+     </div>
+     <div class="grid-cell top">
 	        <h2>SciFi</h2>
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/handmaid.jpeg" alt="Photo of book"> </div>
 		    <p>The Left Hand of Darkness by Ursula K Le Guin</p>
 		    <p>Hitchhiker’s Guide to The Galaxy by Douglas Adam</p>
 		    <p>The Handmaid’s Tale by Margaret Atwood</p>
 		    <p>Story of Your Life and Others by Ted Chiang</p>
-		    <p>Never Let Me Go by Kazuo Ishiguro</p>
-		</div>
-        
-        <div class="column">		         
-	        <h2>Horror</h2>	
+		    <p>Never Let Me Go by Kazuo Ishiguro</p>     	
+     </div>
+     <div class="grid-cell top">
+     		 <h2>Horror</h2>	
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/dracula.jpeg" alt="Photo of book"> </div>	 
 		    <p>Doctor Sleep by Stephen King</p>
 		    <p>Goosebumps by RL Stein</p>
 		    <p>The Haunting of Hill House by Shirley Jackson</p>
 		    <p>It by Stephen King</p>
 	        <p>Dracula by Bram Stoker</p>
-	    </div>
-
-	    <div class="column">
+     </div>
+     <div class="grid-cell top">
 	        <h2>Historical Fiction</h2>
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/bookTheif.jpeg" alt="Photo of book"> </div>	
 	   	    <p>Things Fall Apart by Chinua Achebe</p>
 		    <p>The Book Thief by Markus Zusak</p>
 		    <p>The Alice Network by Kate Quinn</p>
 		    <p>The Nightengale by Kristin Hannah</p>      	
-		    <p>Frederick Douglass by Frederick Douglass</p>
-		</div>
-
-	    <div class="column">
+		    <p>Frederick Douglass by Frederick Douglass</p>     	
+     </div>
+     <div class="grid-cell top">
 	        <h2>Contemporary</h2>
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/littlefires.jpeg" alt="Photo of book"> </div>
 		    <p>Less by Sean Greer</p>
 		    <p>The White Tiger by Aravind Adiga</p>
 		    <p>Little Fires Everywhere by Celeste Ng</p>
 		    <p>We Should All Be Feminists Chimamanda Ngozi Adichie</p>
-		    <p>The Luckiest Girl Alive by Jessica Knoll</p>
-	       </div>
-	</div>
+		    <p>The Luckiest Girl Alive by Jessica Knoll</p>    	
+     </div>
 </div>
 
-
-<div class="container">
-	<div class="row">
-		<h2> POC Collections </h2>		
-		<div class="column">
+<h2>POC Collections</h2>
+<div class="container2">
+    <div class="grid-cell top">
 	        <h2>Latinx</h2>
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/mangohouse.jpeg" alt="Photo of book"> </div>	 
 		    <p>The Brief Wondrous Life of Oscar Wao by Junot Diaz</p>
@@ -190,19 +156,17 @@
 		    <p>Labyrinth Lost by Zoraida Cordova</p>
 		    <p>City of Beasts by Isabel Allende</p>
 		    <p>I am Not Your Perfect Mexican Daughter by Erika Sanchez</p>
-		</div>
-
-		<div class="column">
+	</div>
+     <div class="grid-cell top">
 	        <h2>Black</h2>
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/hateugive.jpeg" alt="Photo of book"> </div>	
 	        <p>Purple Hibiscus by Chimananda Ngozi Adichie</p>
 		    <p>The Hate U Give by Angie Thomas</p>
 		    <p>Queen Sugar by Natalie Baszile</p>
 		    <p>The Bluest Eye by Toni Morrison</p>
-		    <p>The Water Dancer by Ta-Nehisi Coates</p>
-		</div>
-	             
-		<div class="column">
+		    <p>The Water Dancer by Ta-Nehisi Coates</p>  	
+     </div>
+     <div class="grid-cell top">
 	        <h2>LGBT</h2>	
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/dante.jpeg" alt="Photo of book"> </div>	
       		<p>Ask The Passengers by A.S. King</p>        
@@ -212,21 +176,17 @@
 	            	 by Benjamin Alire Sáenz</p>
 	        <p>Juliet Takes a Breath by Gabby Rivera</p>
 	        <p>The Gravity of Us by Phil Stamper</p>
-	    </div>
-
-		
-		<div class="column">    
+     </div>
+     <div class="grid-cell top">
 	        <h2>Asian</h2>
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/pachinko.jpeg" alt="Photo of book"> </div>
 
 	        <p>The Sympathizer by Viet Than Nguyen</p>
 	        <p>On Earth We're Briefly Gorgeous by Ocean Vuong</p>
             <p>The Namesake by Jhumpa Lahiri</p>
-            <p>Pachinko by Min Jin Lee</p>
-        </div>
-	             
-
-		<div class="column">    
+            <p>Pachinko by Min Jin Lee</p>    	
+     </div>
+     <div class="grid-cell top">
 	        <h2>Native American</h2>
 	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/ThereThere.jpeg" alt="Photo of book"> </div>	   
 	           	 <p>There There by Tommy Orange</p>
@@ -234,17 +194,14 @@
 	             and The Birth of The FBI by David Grann</p>
 	             <p>Love Medicine by Louise Erdirch</p>
 	             <p>The Grass Dancer by Susan Power</p>
-	             <p>Indian Lawyer by James Welch</p>          
-	    </div>
+	             <p>Indian Lawyer by James Welch</p>       	
+     </div>
 </div>
 
-</div>
-
-
-<div class="container">
-	<div class="row">
-		<h2> Collections by Age Group </h2>
-		<div class="column">
+<div>
+<h2>Collections by Age</h2>
+<div class="container2">
+		<div class="grid-cell top">
   			<h2>Children's </h2>
 	           	<div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/lorax.jpeg" alt="Photo of book"> </div>	 
 	         	<p>The Tale of Despereuax by Kate DiCamillo</p>     
@@ -253,7 +210,7 @@
 	           	<p>The Lorax by Dr. Seuss</p>
 	           	<p>Oh The Places You'll Go by Dr. Seuss</p>
 		</div>
-		<div class="column">
+     <div class="grid-cell top">
   			<h2>Middle School</h2> 
 	           	<div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/wonder.jpeg" alt="Photo of book"> </div>	
 	             <p>Lord of The Rings</p>
@@ -261,8 +218,8 @@
 	             <p>Wonder by R.J. Palacio</p>
 	             <p>The Giver by Lois Lowry</p>
 	             <p>The Uglies Triilogy by Scott Westerfeld</p>
-		</div>
-		<div class="column">
+     </div>
+		<div class="grid-cell top">
   			<h2>High School</h2>
 	           	<div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/angels.jpeg" alt="Photo of book"> </div>	 
 	           	<p>Crazy Rich Asians Series by Kevin Kwan</p>
@@ -270,8 +227,8 @@
 	            <p>The Things They Carried by Tim O'Brien</p>
 	            <p>Angels in America by Tony Kushner</p>
 	            <p>Breakfast at Tiffany's by Truman Capote</p>
-		</div>
-		<div class="column">
+     </div>
+		<div class="grid-cell top">
 	        <h2>College</h2>
 	         <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/blackids.jpeg" alt="Photo of book"> </div>	
 	             <p>Why Are All The Black Kids Sitting Together in The Cafeteria by Beverly Daniel Tatum</p>
@@ -279,10 +236,9 @@
 	             <p>Midnight's Children by Salman Rushdie</p>
 	             <p>Fantomina by Eliza Haywood</p>
 	             <p>The Line of Beauty by Alan Hollinghurst</p>
-		</div>
-	</div>
+		</div> 	
 </div>
-		
+</div>
 
     <script type="text/javascript" src="includes/footer.js"></script>
 	</body>
