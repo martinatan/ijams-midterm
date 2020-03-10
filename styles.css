@@ -163,6 +163,12 @@ footer {
 	padding-right:15px;
 }
 
+@media screen and (max-width:400px) {
+    #copyright {
+        font-size:4px;
+    }
+}
+
 /* other general theme styles */
 .page-wrapper{
 	width: 100%;
@@ -211,4 +217,3 @@ a {
 table {
 	width: 100%;
 }
-
