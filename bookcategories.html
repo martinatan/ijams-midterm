@@ -11,9 +11,9 @@
 	<link rel="stylesheet" type = "text/css" href="styles.css" />
 
 <style>
-	
 
-		img {
+
+		.img1 {
 			width: 150px;
 			height: 200px;
 		}
@@ -37,7 +37,7 @@
 		    grid-template-rows: 1fr 1fr;
 		    grid-template-areas: 'top top top top top'
 		   						 'top top top top top';
-		  /* grid-template-rows: auto;    */             
+		  /* grid-template-rows: auto;    */
 		}
 
 		.container2 {
@@ -45,15 +45,15 @@
 		    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		    grid-template-rows: 1fr;
 		    grid-template-areas: 'top top top top top';
-		/*    grid-template-rows: auto;  */              
+		/*    grid-template-rows: auto;  */
 		}
 
-		.container3 {	
+		.container3 {
 		    display: grid;
 		    grid-template-columns: 1fr 1fr 1fr 1fr;
 		    grid-template-rows: 1fr;
 		    grid-template-areas: 'top top top top';
-		/*    grid-template-rows: auto;  */              
+		/*    grid-template-rows: auto;  */
 		}
 
 		.grid-cell {
@@ -70,13 +70,13 @@
 		        grid-template-rows: auto;
 		        grid-template-areas: 'top top top top';
 		    }
-		    
+
 		    .container2 {
 		        grid-template-columns: 1fr 1fr 1fr 1fr;
 		        grid-template-rows: auto;
 		        grid-template-areas: 'top top top top';
 		    }
-		    
+
 		    .container3{
 		        grid-template-columns: 1fr 1fr 1fr 1fr;
 		        grid-template-rows: auto;
@@ -90,13 +90,13 @@
 		        grid-template-rows: auto;
 		               grid-template-areas: 'top top top';
 		    }
-		    
+
 		    .container2 {
 		        grid-template-columns: 1fr 1fr 1fr;
 		        grid-template-rows: auto;
 		               grid-template-areas: 'top top top';
 		    }
-		    
+
 		    .container3{
 		        grid-template-columns: 1fr 1fr 1fr;
 		        grid-template-rows: auto;
@@ -111,13 +111,13 @@
 		        grid-template-rows: auto;
 		               grid-template-areas: 'top top';
 		    }
-		    
+
 		    .container2 {
 		        grid-template-columns: 1fr 1fr;
 		        grid-template-rows: auto;
 		               grid-template-areas: 'top top';
 		    }
-		    
+
 		    .container3{
 		        grid-template-columns: 1fr 1fr;
 		        grid-template-rows: auto;
@@ -131,13 +131,13 @@
 		        grid-template-rows: auto;
 		               grid-template-areas: 'top';
 		    }
-		    
+
 		    .container2 {
 		        grid-template-columns: 1fr;
 		        grid-template-rows: auto;
 		               grid-template-areas: 'top';
 		    }
-		    
+
 		    .container3{
 		        grid-template-columns: 1fr;
 		        grid-template-rows: auto;
@@ -183,11 +183,11 @@
 <h2 class="collectiontitle"> Collections by Genre </h2>
 
 <div class="container1">
-    
+
     <div class="grid-cell top">
     	<div class="colcontent">
 	    	<h2>Classics </h2>
-			<div><img box-sizing="border-box" display= "flex" src="photos/bookcategories/p&pj.jpg" alt="Photo of book"></div>
+			<div><img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/p&pj.jpg" alt="Photo of book"></div>
 
 
 			<br>
@@ -206,94 +206,94 @@
 			<p class="booktitle ptag">Hamlet</p>
 			<br>
 			<p class="ptag"> Shakespeare</p>
-			<br>  
+			<br>
 
 			<br>
 			<p class="booktitle ptag">One Hundred Years of Solitude</p>
 			<br>
 			<p class="ptag"> Gabriel García Márquez</p>
-			<br> 
+			<br>
 
 			<br>
 			<p class="booktitle ptag">The Great Gatsby</p>
 			<br>
 			<p class="ptag"> F. Scott Fitzgerald</p>
-			<br> 
+			<br>
 		</div>
-   
+
 	</div>
-    
+
     <div class="grid-cell top">
     	<div class="colcontent">
     		<h2>Mystery</h2>
-		    <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/curiousincident.jpeg" alt="Photo of book"> </div>	    
+		    <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/curiousincident.jpeg" alt="Photo of book"> </div>
 
 		   	<br>
 			<p class="booktitle ptag">And Then There Were None</p>
 			<br>
 			<p class="ptag"> Agatha Christie</p>
-			<br> 
+			<br>
 
 		   	<br>
 			<p class="booktitle ptag">The Girl on The Train</p>
 			<br>
 			<p class="ptag"> Paula Hawkins</p>
-			<br> 
+			<br>
 
 
 		   	<br>
 			<p class="booktitle ptag">Dragon's Teeth</p>
 			<br>
 			<p class="ptag"> Upton Sinclair</p>
-			<br> 
+			<br>
 
 		   	<br>
 			<p class="booktitle ptag">Queenpin</p>
 			<br>
 			<p class="ptag"> Megan Abbott</p>
-			<br> 
+			<br>
 
 			<br>
 			<p class="booktitle ptag">The Curious Incident of The Dog and The Nighttime</p>
 			<br>
 			<p class="ptag"> Mark Haddon</p>
-			<br> 
+			<br>
 
 		</div>
     </div>
-    
+
     <div class="grid-cell top">
     	<div class="colcontent">
 	     	 <h2>Fantasy</h2>
-			<img box-sizing="border-box" display= "flex" src="photos/bookcategories/harrypotter.jpg" alt="Photo of book"> 	 
-			
+			<img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/harrypotter.jpg" alt="Photo of book">
+
 			<br>
 			<p class="booktitle ptag">Lord of the Rings</p>
 			<br>
 			<p class="ptag"> J.R.R. Tolkein</p>
-			<br> 
+			<br>
 
 			<br>
 			<p class="booktitle ptag">Eragon Series</p>
 			<br>
 			<p class="ptag"> Christopher Paolini</p>
-			<br> 
-	
+			<br>
+
 
 			<br>
 			<p class="booktitle ptag">The Magic Tree House Series</p>
 			<br>
 			<p class="ptag"> Mary Pope Osborne</p>
-			<br> 
+			<br>
 
-      
+
   			<br>
 			<p class="booktitle ptag">Harry Potter Series</p>
 			<br>
 			<p class="ptag">J.K. Rowling</p>
 			<br>
 
-      
+
   			<br>
 			<p class="booktitle ptag">Percy Jackson and the Olympians</p>
 			<br>
@@ -305,11 +305,11 @@
 
      <div class="grid-cell top">
      	    	<div class="colcontent">
-     	<h2 >Poetry</h2>	 
-	    <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/milkandhoney.jpeg" alt="Photo of book"> </div>	
+     	<h2 >Poetry</h2>
+	    <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/milkandhoney.jpeg" alt="Photo of book"> </div>
 
 	    <br>
-		<p class="booktitle ptag">Night Sky with Exit Wounds 
+		<p class="booktitle ptag">Night Sky with Exit Wounds
 		<br>
 		<p class="ptag"> Ocean Vuong</p>
 		<br>
@@ -319,17 +319,17 @@
 		<p class="ptag"> Rupi Kaur</p>
 	    <br>
 
-	    <br> 			
+	    <br>
 		<p class="booktitle ptag">The Complete Collected Poems of Maya Angelou</p><br>
 		<p class="ptag"> Maya Angelou</p>
 	    <br>
 
-	    <br> 		
+	    <br>
 		<p class="booktitle ptag">Life on Mars</p><br>
 		<p class="ptag"> Tracy K. Smith</p>
 	    <br>
 
-	    <br> 		
+	    <br>
 		<p class="booktitle ptag">The Loop of Jade</p><br>
 		<p class="ptag"> Sarah Howe </p>
 		<br>
@@ -339,59 +339,59 @@
      <div class="grid-cell top">
      	    	<div class="colcontent">
 	    <h2>Dystopian</h2>
-	    <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/hungergames.jpeg" alt="Photo of book"> </div>	  
+	    <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/hungergames.jpeg" alt="Photo of book"> </div>
 	    <br>
 	    <p class="booktitle ptag">The Hunger Games</p><br>
 	    <p class="ptag"> Suzanne Collins</p>
 	    <br>
 
-	    <br> 		    
+	    <br>
 	    <p class="booktitle ptag">Parable of The Sower</p><br>
-	    <p class="ptag"> Octavia E. Butler</p>	 
+	    <p class="ptag"> Octavia E. Butler</p>
 	    <br>
 
-	    <br> 		    
+	    <br>
 	    <p class="booktitle ptag">The Windup Girl</p><br>
 	    <p class="ptag"> Paolo Bacigalupi</p>
 	    <br>
 
-	    <br> 		    
+	    <br>
 	    <p class="booktitle ptag">Brown Girl in The Ring</p><br>
 	    <p class="ptag"> Nalo Hopkinson</p>
 	    <br>
 
-	    <br> 	
-	    <p class="booktitle ptag">Ship Breaker</p><br>
-	    <p class="ptag"> Paolo Bacigalupi</p> 
 	    <br>
-	    </div>     	
+	    <p class="booktitle ptag">Ship Breaker</p><br>
+	    <p class="ptag"> Paolo Bacigalupi</p>
+	    <br>
+	    </div>
      </div>
 
      <div class="grid-cell top">
      	    	<div class="colcontent">
 	       	<h2>Memoir </h2>
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/michelle.jpeg" alt="Photo of book"> </div>	
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/michelle.jpeg" alt="Photo of book"> </div>
 	        <br>
     	    <p class="booktitle ptag">Being Mortal</p><br>
     	    <p class="ptag"> Atul Gawande</p>
 	        <br>
 
-	        <br> 	    	    
+	        <br>
 	        <p class="booktitle ptag">Frederick Douglass</p><br>
 	        <p class="ptag"> Frederick Douglass</p>
 	        <br>
 
-	        <br> 		        
+	        <br>
 	        <p class="booktitle ptag">The Woman Warrior</p><br>
-	        <p class="ptag"> Maxine Hong Kingston</p>	
+	        <p class="ptag"> Maxine Hong Kingston</p>
 	        <br>
 
-	        <br> 		        
+	        <br>
 	        <p class="booktitle ptag">Becoming</p><br>
-	        <p class="ptag"> Michelle Obama</p>       
+	        <p class="ptag"> Michelle Obama</p>
 	        <br>
 
-	        <br> 		        	
+	        <br>
 	        <p class="booktitle ptag">Dreams From My Father</p><br>
 	        <p class="ptag"> Barack Obama</p>
 	        <br>
@@ -401,59 +401,59 @@
      <div class="grid-cell top">
      	    	<div class="colcontent">
 	        <h2>SciFi</h2>
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/handmaid.png" alt="Photo of book"> </div>
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/handmaid.png" alt="Photo of book"> </div>
 	        <br>
 		    <p class="booktitle ptag">The Left Hand of Darkness</p><br>
 		    <p class="ptag"> Ursula K Le Guin</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">Hitchhiker’s Guide to The Galaxy</p><br>
 		    <p class="ptag"> Douglas Adam</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">The Handmaid’s Tale</p><br>
 		    <p class="ptag"> Margaret Atwood</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">Story of Your Life and Others</p><br>
 		    <p class="ptag"> Ted Chiang</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">Never Let Me Go</p><br>
-		    <p class="ptag"> Kazuo Ishiguro</p>   
+		    <p class="ptag"> Kazuo Ishiguro</p>
 		    <br>
-		    </div>  	
+		    </div>
      </div>
 
      <div class="grid-cell top">
      	    	<div class="colcontent">
-     		 <h2>Horror</h2>	
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/dracula.jpg" alt="Photo of book"> </div>	
-	        <br> 
+     		 <h2>Horror</h2>
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/dracula.jpg" alt="Photo of book"> </div>
+	        <br>
 		    <p class="booktitle ptag">Doctor Sleep</p><br>
 		    <p class="ptag"> Stephen King</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">Goosebumps</p><br>
 		    <p class="ptag"> RL Stein</p>
 	        <br>
 
-	        <br> 	    
+	        <br>
 		    <p class="booktitle ptag">The Haunting of Hill House</p><br>
 		    <p class="ptag"> Shirley Jackson</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">It</p><br>
 		    <p class="ptag"> Stephen King</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 	        <p class="booktitle ptag">Dracula</p><br>
 	        <p class="ptag"> Bram Stoker</p>
 	        <br>
@@ -463,63 +463,63 @@
      <div class="grid-cell top">
      	    	<div class="colcontent">
 	        <h2>Historical Fiction</h2>
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/booktheif.jpeg" alt="Photo of book"> </div>	
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/booktheif.jpeg" alt="Photo of book"> </div>
 	        <br>
 	   	    <p class="booktitle ptag">Things Fall Apart</p><br>
 	   	    <p class="ptag"> Chinua Achebe</p>
 	        <br>
 
-	        <br> 	   	    
+	        <br>
 		    <p class="booktitle ptag">The Book Thief</p><br>
 		    <p class="ptag"> Markus Zusak</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">The Alice Network</p><br>
 		    <p class="ptag"> Kate Quinn</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">The Nightengale</p><br>
-		    <p class="ptag"> Kristin Hannah</p>    
+		    <p class="ptag"> Kristin Hannah</p>
 	        <br>
 
-	        <br> 		      	
+	        <br>
 		    <p class="booktitle ptag">Frederick Douglass</p><br>
-		    <p class="ptag"> Frederick Douglass</p>  
+		    <p class="ptag"> Frederick Douglass</p>
 		    <br>
-		    </div>   	
+		    </div>
      </div>
 
      <div class="grid-cell top">
      	    	<div class="colcontent">
 	        <h2>Contemporary</h2>
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/littlefires.jpeg" alt="Photo of book"> </div>
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/littlefires.jpeg" alt="Photo of book"> </div>
 	        <br>
 		    <p class="booktitle ptag">Less</p><br>
 		    <p class="ptag"> Sean Greer</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">The White Tiger</p><br>
 		    <p class="ptag"> Aravind Adiga</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">Little Fires Everywhere</p><br>
 		    <p class="ptag"> Celeste Ng</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">We Should All Be Feminists</p><br>
 		    <p class="ptag"> Chimamanda Ngozi Adichie</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">The Luckiest Girl Alive</p><br>
-		    <p class="ptag"> Jessica Knoll</p>   
+		    <p class="ptag"> Jessica Knoll</p>
 		    <br>
-		    </div> 	
+		    </div>
      </div>
 
 </div>
@@ -532,28 +532,28 @@
     <div class="grid-cell top">
     	    	<div class="colcontent">
 	        <h2>Latinx</h2>
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/housemango.jpeg" alt="Photo of book"> </div>	 
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/housemango.jpeg" alt="Photo of book"> </div>
 	        <br>
 		    <p class="booktitle ptag">The Brief Wondrous Life of Oscar Wao</p><br>
 		    <p class="ptag"> Junot Diaz</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">The House on Mango Street</p><br>
 		    <p class="ptag"> Sandra Cisneros</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">Labryinth Lost</p><br>
 		    <p class="ptag"> Zoraida Cordova</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">City of Beasts</p><br>
 		    <p class="ptag"> Isabel Allende</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">I am Not Your Perfect Mexican Daughter</p><br>
 		    <p class="ptag"> Erika Sanchez</p>
 		    <br>
@@ -563,65 +563,65 @@
      <div class="grid-cell top">
      	    	<div class="colcontent">
 	        <h2>Black</h2>
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/hateugive.jpeg" alt="Photo of book"> </div>	
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/hateugive.jpeg" alt="Photo of book"> </div>
 	        <br>
 	        <p class="booktitle ptag">Purple Hibiscus</p><br>
 	        <p class="ptag"> Chimananda Ngozi Adichie</p>
 	        <br>
 
-	        <br> 	        
+	        <br>
 		    <p class="booktitle ptag">The Hate U Give</p><br>
 		    <p class="ptag"> Angie Thomas</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">Queen Sugar</p><br>
 		    <p class="ptag"> Natalie Baszile</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">The Bluest Eye</p><br>
 		    <p class="ptag"> Toni Morrison</p>
 	        <br>
 
-	        <br> 		    
+	        <br>
 		    <p class="booktitle ptag">The Water Dancer</p><br>
-		    <p class="ptag"> Ta-Nehisi Coates</p>  
+		    <p class="ptag"> Ta-Nehisi Coates</p>
 		    <br>
-		    </div>	
+		    </div>
      </div>
 
      <div class="grid-cell top">
      	    	<div class="colcontent">
-	        <h2>LGBT</h2>	
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/dante.jpeg" alt="Photo of book"> </div>	
+	        <h2>LGBT</h2>
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/dante.jpeg" alt="Photo of book"> </div>
 	        <br>
       		<p class="booktitle ptag">Ask The Passengers</p><br>
-      		<p class="ptag"> A.S. King</p>        
+      		<p class="ptag"> A.S. King</p>
 	        <br>
 
-	        <br>      		
+	        <br>
 	        <p class="booktitle ptag">Simon vs. The Homo Sapiens Agenda</p><br>
 	        <p class="ptag"> Becky Albertalli</p>
 	        <br>
 
-	        <br>	        
+	        <br>
 	        <p class="booktitle ptag">Call Me by Your Name</p><br>
-	        <p class="ptag"> Andre Aciman</p>	 
+	        <p class="ptag"> Andre Aciman</p>
 	        <br>
 
-	        <br>	        
-	        <p class="booktitle ptag">Aristotle and Dante Discover The Secrets of The Universe 
+	        <br>
+	        <p class="booktitle ptag">Aristotle and Dante Discover The Secrets of The Universe
 	            	</p><br>
 	            	 <p class="ptag"> Benjamin Alire Sáenz</p>
 	        <br>
 
-	        <br>	            	 
+	        <br>
 	        <p class="booktitle ptag">Juliet Takes a Breath</p><br>
 	        <p class="ptag"> Gabby Rivera</p>
 	        <br>
 
-	        <br>	        
+	        <br>
 	        <p class="booktitle ptag">The Gravity of Us</p><br>
 	        <p class="ptag"> Phil Stamper</p>
 	        <br>
@@ -631,64 +631,64 @@
      <div class="grid-cell top">
      	    	<div class="colcontent">
 	        <h2>Asian</h2>
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/pachinko.jpeg" alt="Photo of book"> </div>
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/pachinko.jpeg" alt="Photo of book"> </div>
 			<br>
 	        <p class="booktitle ptag">The Sympathizer</p><br>
 	        <p class="ptag"> Viet Than Nguyen</p>
 	        <br>
 
-	        <br>		        
+	        <br>
 	        <p class="booktitle ptag">On Earth We're Briefly Gorgeous</p><br>
 	        <p class="ptag"> Ocean Vuong</p>
 	        <br>
 
-	        <br>		        
+	        <br>
             <p class="booktitle ptag">The Namesake</p><br>
             <p class="ptag"> Jhumpa Lahiri</p>
 	        <br>
 
-	        <br>	            
+	        <br>
             <p class="booktitle ptag">Pachinko</p><br>
-            <p class="ptag"> Min Jin Lee</p>    
+            <p class="ptag"> Min Jin Lee</p>
             <br>
 
-	        <br>	            
+	        <br>
             <p class="booktitle ptag">Pachinko</p><br>
-            <p class="ptag"> Min Jin Lee</p>    
+            <p class="ptag"> Min Jin Lee</p>
             <br>
 
-            </div>	
+            </div>
      </div>
 
      <div class="grid-cell top">
      	    	<div class="colcontent">
 	        <h2>Native American</h2>
-	        <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/ThereThere.jpeg" alt="Photo of book"> </div>	  
-	       		 <br> 
+	        <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/ThereThere.jpeg" alt="Photo of book"> </div>
+	       		 <br>
 	           	 <p class="booktitle ptag">There There</p><br>
 	           	 <p class="ptag"> Tommy Orange</p>
 	             <br>
 
-	             <br>		             <p class="booktitle ptag">Killers of The Flower Moon: The Osage Murders 
+	             <br>		             <p class="booktitle ptag">Killers of The Flower Moon: The Osage Murders
 	             and The Birth of The FBI</p><br>
 	             <p class="ptag"> David Grann</p>
 	             <br>
 
-	             <br>		             
+	             <br>
 	             <p class="booktitle ptag">Love Medicine</p><br>
 	             <p class="ptag"> Louise Erdirch</p>
 	             <br>
 
-	             <br>		             
+	             <br>
 	             <p class="booktitle ptag">The Grass Dancer</p><br>
 	             <p class="ptag"> Susan Power</p>
 	             <br>
 
-	             <br>	
-	             <p class="booktitle ptag">Indian Lawyer</p><br>
-	             <p class="ptag"> James Welch</p>   
 	             <br>
-	             </div>    	
+	             <p class="booktitle ptag">Indian Lawyer</p><br>
+	             <p class="ptag"> James Welch</p>
+	             <br>
+	             </div>
      </div>
 </div>
 </div>
@@ -699,28 +699,28 @@
 		<div class="grid-cell top">
 			    	<div class="colcontent">
   			<h2>Children's </h2>
-	           	<div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/lorax.jpeg" alt="Photo of book"> </div>	 
+	           	<div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/lorax.jpeg" alt="Photo of book"> </div>
 	           	<br>
 	         	<p class="booktitle ptag">The Tale of Despereuax</p><br>
-	         	<p class="ptag"> Kate DiCamillo</p>     
+	         	<p class="ptag"> Kate DiCamillo</p>
 	             <br>
 
-	             <br>		         	
+	             <br>
 	           	<p class="booktitle ptag">The Story of Ferdinand</p><br>
-	           	<p class="ptag"> Munro Leaf</p>   
+	           	<p class="ptag"> Munro Leaf</p>
 	             <br>
 
-	             <br>		           	    
+	             <br>
 	           	<p class="booktitle ptag">Aesop's Fables</p><br>
 	           	<p class="ptag"> Aesop</p>
 	             <br>
 
-	             <br>		           	
+	             <br>
 	           	<p class="booktitle ptag">The Lorax</p><br>
 	           	<p class="ptag"> Dr. Seuss</p>
 	             <br>
 
-	             <br>		           	
+	             <br>
 	           	<p class="booktitle ptag">Oh The Places You'll Go</p><br>
 	           	<p class="ptag"> Dr. Seuss</p>
 	           	<br>
@@ -729,29 +729,29 @@
 
      	<div class="grid-cell top">
      		    	<div class="colcontent">
-  			<h2>Middle School</h2> 
-	           	<div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/wonder.jpeg" alt="Photo of book"> </div>	
+  			<h2>Middle School</h2>
+	           	<div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/wonder.jpeg" alt="Photo of book"> </div>
 	           	<br>
 	             <p class="booktitle ptag">The Impossible Knife of Memory</p><br>
 	             <p class="ptag"> Laurie Halse Anderson</p>
 	             <br>
 
-	             <br>		             
+	             <br>
 	             <p class="booktitle ptag">Stargirl</p><br>
 	             <p class="ptag"> Jerry Spinelli</p>
 	             <br>
 
-	             <br>	             
+	             <br>
 	             <p class="booktitle ptag">Wonder</p><br>
 	             <p class="ptag"> R.J. Palacio</p>
 	             <br>
 
-	             <br>	             
+	             <br>
 	             <p class="booktitle ptag">The Giver</p><br>
 	             <p class="ptag"> Lois Lowry</p>
 	             <br>
 
-	             <br>	             
+	             <br>
 	             <p class="booktitle ptag">The Uglies Trilogy</p><br>
 	             <p class="ptag"> Scott Westerfeld</p>
 	             <br>
@@ -761,7 +761,7 @@
 		<div class="grid-cell top">
 			    	<div class="colcontent">
   			<h2>High School</h2>
-	           	<div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/angels.jpeg" alt="Photo of book"> </div>	 
+	           	<div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/angels.jpeg" alt="Photo of book"> </div>
 	           	<br>
 	           	<p class="booktitle ptag">Crazy Rich Asians Series</p><br>
 	           	<p class="ptag"> Kevin Kwan</p>
@@ -796,7 +796,7 @@
 		<div class="grid-cell top">
 			    	<div class="colcontent">
 	        <h2>College</h2>
-	         <div> <img box-sizing="border-box" display= "flex" src="photos/bookcategories/blackids.jpeg" alt="Photo of book"> </div>	
+	         <div> <img class="img1" box-sizing="border-box" display= "flex" src="photos/bookcategories/blackids.jpeg" alt="Photo of book"> </div>
 
 	         	 <br>
 	             <p class="booktitle ptag">Why Are All The Black Kids Sitting Together in The Cafeteria</p><br>
@@ -808,22 +808,22 @@
 	           	 <p class="ptag"> A.S. Byatt</p>
 	             <br>
 
-	             <br>	             	           	 
+	             <br>
 	             <p class="booktitle ptag">Midnight's Children</p><br>
 	             <p class="ptag"> Salman Rushdie</p>
 	             <br>
 
-	             <br>	             	             
+	             <br>
 	             <p class="booktitle ptag">Fantomina</p><br>
 	             <p class="ptag">Eliza Haywood</p>
 	             <br>
 
-	             <br>	             	             
+	             <br>
 	             <p class="booktitle ptag">The Line of Beauty</p><br>
 	             <p class="ptag">Alan Hollinghurst</p>
-	             <br>	             
+	             <br>
 	         </div>
-		</div> 	
+		</div>
 </div>
 </div>
 </div>
