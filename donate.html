@@ -9,16 +9,20 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="jquery-3.4.1.min.js"></script>
-	<script>src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
-		$(document).ready(function(){
-		  $("button").click(function(){
-			$("p").hide();
+        $(document).ready(function() {
+          $(':button').hover(function() {
+              $(this).css("background-color", "tomato");
+          });
+
+		  $(':button').click(function() {
+              $(this).css("background-color", "deepskyblue");
 		  });
 		});
     </script>
     <style>
-        button{
+        button {
             font-family: Lustria;
             padding: 10px;
             background-color:#3F0D12;
